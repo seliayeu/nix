@@ -47,12 +47,15 @@
     pkgs.nix-direnv
     pkgs.nvme-cli
     pkgs.smartmontools
+    pkgs.qmk
   ];
 
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
   };
+
+  services.udisks2.enable = true;
 
   environment.variables.editor = "vim";
   environment.sessionVariables = {

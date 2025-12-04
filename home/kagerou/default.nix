@@ -48,6 +48,9 @@
     ripgrep
     fzf
     fortune
+    waypipe
+    man-pages
+    man-pages-posix
   ];
   wayland.windowManager.sway = {
     enable = true;
@@ -278,10 +281,14 @@
       "cdol01" = {
         user = "seliayeu";
         proxyJump = "innis";
+        forwardX11 = true;
+        forwardX11Trusted = true;
       };
       "cdol02" = {
         user = "seliayeu";
         proxyJump = "innis";
+        forwardX11 = true;
+        forwardX11Trusted = true;
       };
       "cdol03" = {
         user = "seliayeu";
